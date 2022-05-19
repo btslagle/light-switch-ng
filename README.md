@@ -1,4 +1,6 @@
-# Light Switch (Angular Edition)
+# [Deployed Site](https://fluffy-khapse-76ed18.netlify.app/)
+
+## Light Switch (Angular Edition)
 
 Create an Angular app that has the following:
 
