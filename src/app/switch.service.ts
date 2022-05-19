@@ -1,4 +1,4 @@
-import { Injectable, Input, EventEmitter } from '@angular/core';
+import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +7,6 @@ export class SwitchService {
 
   constructor() { }
   
-  @Input() switchLight = new EventEmitter<Event>();
   
   isLightOn = false;
   

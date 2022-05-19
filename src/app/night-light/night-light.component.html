@@ -1,4 +1,4 @@
 <div class="light-switch">
-    <app-light></app-light>
-    <app-switch></app-switch>
+    <app-light [isLightOn]="isLightOn"></app-light>
 </div>
+<app-switch (switchLight)="toggleLight()"></app-switch>

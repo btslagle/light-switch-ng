@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { SwitchComponent } from '../switch/switch.component';
+import { SwitchService } from '../switch.service';
+
 @Component({
   selector: 'app-night-light',
   templateUrl: './night-light.component.html',
@@ -7,14 +8,12 @@ import { SwitchComponent } from '../switch/switch.component';
 })
 export class NightLightComponent  {
 
-  constructor(private switchService: SwitchService) { }
+  constructor(private switchService: SwitchService) {}
 
-  @Output() switchLight = new EventEmitter<Event>();
- toggleLight(){
-   this.switchService.switchLight()
+  isLightOn = this.switchService.isLightOn;
 
- }
- }
-
-  
+  toggleLight() {
+    this.switchService.switchLightMethod();
+    this.isLightOn = this.switchService.isLightOn;
+  }
 }
