@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-family: fantasy;
+}
+
+.on {
+    width: 275px;
+}
+
+.off {
+    width: 200px;
+}
+
+img {
+    margin: auto;
+}
